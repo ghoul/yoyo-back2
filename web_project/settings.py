@@ -115,20 +115,20 @@ STATIC_ROOT = '/app/static/'
 STATIC_URL = '/static/'
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'USER': 'root',
-        'PASSWORD': '',
-        'NAME': 'yoyo',
-    }
     # 'default': {
     #     'ENGINE': 'django.db.backends.mysql',
-    #     'NAME': 'defaultdb',    # Specify your database name
-    #     'USER': 'doadmin',   # Specify your MySQL username
-    #     'PASSWORD': 'AVNS_-BomZsIvPU2Zx0-hd9x',  # Specify your MySQL password
-    #     'HOST': 'db-mysql-fra1-99924-do-user-15052885-0.c.db.ondigitalocean.com',    # Specify the host address of your cloud database
-    #     'PORT': '25060',    # Specify the port number of your cloud database (usually 3306)
+    #     'USER': 'root',
+    #     'PASSWORD': '',
+    #     'NAME': 'yoyo',
     # }
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'defaultdb',    # Specify your database name
+        'USER': 'doadmin',   # Specify your MySQL username
+        'PASSWORD': 'AVNS_Uv7oOWqiMHcUSLkS0YP',  # Specify your MySQL password
+        'HOST': 'db-mysql-ams3-74398-do-user-15052885-0.c.db.ondigitalocean.com',    # Specify the host address of your cloud database
+        'PORT': '25060',    # Specify the port number of your cloud database (usually 3306)
+    }
 }
 
 # settings.py
